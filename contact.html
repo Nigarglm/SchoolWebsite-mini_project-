@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+            screens: {
+                'sm':'390px',
+                'lg':'1440px'
+        },
+          extend: {
+            fontFamily:{
+                'outfit':['Outfit','sans-serif'],
+                'raleway':['Raleway','sans-serif']
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body>
+    <div class="mt-10 px-4 mb-5 max-w-full">
+        <!-- HEADER -->
+        <header>
+            <div class="flex gap-[10px] bg-[#FFDECC] py-[12px] px-[40px] border-2 rounded-[6px] border-[#262626] mb-[14px] lg:px-[565px]">
+                <span class="text-[#262626] text-[14px] font-medium font-outfit">Admission is Open, Grab your seat now</span>
+                <img class="w-5 h-5" src="images/AboutUs/arrow-right-icon.png">
+            </div>
+            <!-- Navbar -->
+            <nav class="font-outfit text-base font-medium text-[#262626] border-2 rounded-[8px] border-[#262626] overflow-hidden">
+                <div class="bg-[#FF8D4D] py-4 px-5 b-r-2 ">
+                <img src="images/AboutUs/Logo.png">
+                </div>
+                <div >
+                    <ul class="flex flex-row items-center lg:block sm:hidden">
+                        <li class="px-[30px] py-[21px] b-l-2 hover:bg-[#FFEFE5]">
+                            <a href="./index.html">Home</a>
+                        </li>
+                        <li class="px-[30px] py-[21px] b-l-2 hover:bg-[#FFEFE5]">
+                            <a href="./aboutUs.html">About Us</a>
+                        </li>
+                        <li class="px-[30px] py-[21px] b-l-2 hover:bg-[#FFEFE5]">
+                            <a href="./academics.html">Academics</a>
+                        </li>
+                        <li class="px-[30px] py-[21px] b-l-2 hover:bg-[#FFEFE5]">
+                            <a href="./admissions.html">Admissions</a>
+                        </li>
+                        <li class="px-[30px] py-[21px] b-l-2 hover:bg-[#FFEFE5]">
+                            <a href="./studentLife.html">Student Life</a>
+                        </li>
+                        <li class="px-[30px] py-[21px] b-l-2 hover:bg-[#FFEFE5]">
+                            <a href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex sm:block lg:hidden bg-[#FFEFE5] py-[17px] px-[30px]">
+                <img class="w-7 h-7" src="images/AboutUs/burger-icon.png">
+                </div>
+            </nav>
+        </header>
+        <!-- Connect Us -->
+        <div>
+            <div>
+                <img src="">
+                <button>Contact Us</button>
+                <h1>Feel Free To Connect With Us</h1>
+                <p>We value open communication and are eager to assist you with any inquiries. Feel free to reach out to us through any of the following contact methods</p>
+            </div>
+            <div>
+                <button>
+                    <img src="./images/contact/mail-icon.png">
+                    <p>hello@littlelearners.com</p>
+                </button>
+                <button>
+                    <img src="./images/contact/phone-icon.png">
+                    <p>+91 91813 23 2309</p>
+                </button>
+                <button>
+                    <img src="./images/contact/location-icon.png">
+                    <p>Somewhere in the World</p>
+                </button>
+                <button>
+                    <img src="./images/contact/clock-icon.png">
+                    <p>Office Hours - 9am - 6 pm</p>
+                </button>
+            </div>
+        </div>
+        <!-- Student Information -->
+        <div>
+            <div>
+                <button>Contact Form</button>
+                <h1>Student Information</h1>
+                <p>If you have specific questions or wish to request more information about Little Learners Academy, please complete the contact form below. Kindly provide the following details to help us better understand your needs</p>
+            </div>
+            <form>
+                <legend>
+                    <img src="./images/contact/fb-icon.png">
+                    <img src="./images/contact/twitter-icon.png">
+                    <img src="./images/contact/linkedin-icon.png">
+                </legend>
+                <label>Parent Name</label>
+                <input type="text" placeholder="Enter Parent Name">
+                <label>Email Address</label>
+                <input type="email" placeholder="Enter Email Address">
+                <label>Phone Number</label>
+                <input type="text" placeholder="Enter Phone Number">
+                <label>Student Name</label>
+                <input type="text" placeholder="Enter Student Name">
+                <label>Student Age</label>
+                <input type="text" placeholder="Enter Student Age">
+                <label for="programs">Program of Intrest</label>
+                <select name="programs" id="programs">
+                    <option>sjsjsj</option>
+                    <option>ajajaj</option>
+                    <option>djdjdj</option>
+                    <option>fjfjfj</option>
+                </select>
+                <label>Message</label>
+                <input type="text" placeholder="Enter your Message">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <!-- FOOTER -->
+        <footer>
+            <div>
+            <img src="images/AboutUs/Logo.png">
+                <p>We believe in the power of play to foster creativity, problem-solving skills, and imagination.</p>
+            </div>
+            <!-- Contats -->
+            <div>
+                <div>
+                    <div>
+                    <img src="images/AboutUs/Mail-Icon.png">
+                    </div>
+                    <p>hello@littlelearners.com</p>
+                </div>
+                <div>
+                    <div>
+                    <img src="images/AboutUs/Phone-Icon.png">
+                    </div>
+                    <p>+91 91813 23 2309</p>
+                </div>
+                <div>
+                    <div>
+                    <img src="images/AboutUs/location-Icon.png">
+                    </div>
+                    <p>Somewhere in the World</p>
+                </div>
+            </div>
+            <!-- Links -->
+            <div>
+                <!-- Home -->
+                <div>
+                    <h1>Home</h1>
+                    <ul>
+                        <li>
+                            <a href="#">Features</a>
+                        </li>
+                        <li>
+                            <a href="#">Our Testimonials</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Academics -->
+                <div>
+                    <h1>Academics</h1>
+                    <ul>
+                        <li>
+                            <a href="#">Special Features</a>
+                        </li>
+                        <li>
+                            <a href="#">Gallery</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- About Us -->
+                <div>
+                    <h1>About Us</h1>
+                    <ul>
+                        <li>
+                            <a href="#">Our Mission</a>
+                        </li>
+                        <li>
+                            <a href="#">Our Vission</a>
+                        </li>
+                        <li>
+                            <a href="#">Awards and Recognitions</a>
+                        </li>
+                        <li>
+                            <a href="#">History</a>
+                        </li>
+                        <li>
+                            <a href="#">Teachers</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Contact Us -->
+                <div>
+                    <h1>Contact Us</h1>
+                    <ul>
+                        <li>
+                            <a href="#">Information</a>
+                        </li>
+                        <li>
+                            <a href="#">Map & Direction</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    
+            <hr>
+            <div>
+                <div>
+                    <a href="#">Terms of Service</a>
+                </div>
+                <div>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <div>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+            <!-- Social -->
+            <div>
+                <div>
+                    <img src="./images/AboutUs/fb-icon.png">
+                </div>
+                <div>
+                    <img src="./images/AboutUs/twitter-icon.png">
+                </div>
+                <div>
+                    <img src="./images/AboutUs/linkedin-icon.png">
+                </div>
+            </div>
+    
+            <hr>
+            <p>Copyright © [2023] Little Learners Academy. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

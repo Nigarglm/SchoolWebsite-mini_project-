@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+            screens: {
+                'sm':'390px',
+                'lg':'1440px'
+        },
+          extend: {
+            fontFamily:{
+                'outfit':['Outfit','sans-serif'],
+                'raleway':['Raleway','sans-serif']
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body>
+    <div class="mt-10 px-4 mb-5 max-w-full">
+        <!-- HEADER -->
+        <header>
+            <div class="flex gap-[10px] bg-[#FFDECC] py-[12px] px-[40px] border-2 rounded-[6px] border-[#262626] mb-[14px] lg:px-[565px]">
+                <span class="text-[#262626] text-[14px] font-medium font-outfit">Admission is Open, Grab your seat now</span>
+                <img class="w-5 h-5" src="images/AboutUs/arrow-right-icon.png">
+            </div>
+            <!-- Navbar -->
+            <nav class="font-outfit text-base font-medium text-[#262626] border-2 rounded-[8px] border-[#262626] overflow-hidden">
+                <div class="bg-[#FF8D4D] py-4 px-5 b-r-2 ">
+                <img src="images/AboutUs/Logo.png">
+                </div>
+                <div >
+                    <ul class="flex flex-row items-center lg:block sm:hidden">
+                        <li class="px-[30px] py-[21px] b-l-2 hover:bg-[#FFEFE5]">
+                            <a href="./index.html">Home</a>
+                        </li>
+                        <li class="px-[30px] py-[21px] b-l-2 hover:bg-[#FFEFE5]">
+                            <a href="./aboutUs.html">About Us</a>
+                        </li>
+                        <li class="px-[30px] py-[21px] b-l-2 hover:bg-[#FFEFE5]">
+                            <a href="./academics.html">Academics</a>
+                        </li>
+                        <li class="px-[30px] py-[21px] b-l-2 hover:bg-[#FFEFE5]">
+                            <a href="./admissions.html">Admissions</a>
+                        </li>
+                        <li class="px-[30px] py-[21px] b-l-2 hover:bg-[#FFEFE5]">
+                            <a href="./studentLife.html">Student Life</a>
+                        </li>
+                        <li class="px-[30px] py-[21px] b-l-2 hover:bg-[#FFEFE5]">
+                            <a href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex sm:block lg:hidden bg-[#FFEFE5] py-[17px] px-[30px]">
+                <img class="w-7 h-7" src="images/AboutUs/burger-icon.png">
+                </div>
+            </nav>
+        </header>
+        <!-- Enriching Student Life -->
+        <div>
+            <img src="images/AboutUs/overview-img.png">
+            <button>Enriching Student Life</button>
+            <h1>Embracing Learning with Discovery and Joy</h1>
+            <p>Welcome to our Student Life page, where the magic of childhood comes alive through the enriching experiences and adventures that our students embark on each day. At our kindergarten school, we believe that learning goes beyond textbooks, and we strive to create a holistic and engaging environment that nurtures every aspect of a child's development.</p>
+        </div>
+        <!-- Extracurricular Activities -->
+        <div>
+            <div>
+                <button>Our Features</button>
+                <h1>Extracurricular Activities</h1>
+                <p>At Little Learners Academy, we believe in nurturing well-rounded individuals. Our extracurricular activities offer a diverse range of experiences that complement our academic curriculum and encourage students to explore their interests and passions. We offer a wide array of extracurricular activities, including</p>
+            </div>
+            <div>
+                <!-- Sports and Athletics -->
+                <div>
+                    <img src="./images/studentLife/lightning-icon.png">
+                    <h1>Sports and Athletics</h1>
+                    <p>Students can participate in various sports, from soccer and basketball to gymnastics and yoga. Sports help promote teamwork, physical fitness, and a sense of discipline.</p>
+                </div>
+                <!-- Art and Creativity -->
+                <div>
+                    <img src="./images/studentLife/brush-icon.png">
+                    <h1>Art and Creativity</h1>
+                    <p>Our art classes and creative workshops provide a platform for students to express their creativity through painting, drawing, and other artistic forms.</p>
+                </div>
+                <!-- Music and Performing Arts -->
+                <div>
+                    <img src="./images/studentLife/music-icon.png">
+                    <h1>Music and Performing Arts</h1>
+                    <p>Students can discover their musical talents through singing, playing musical instruments, and participating in drama and theater performances.</p>
+                </div>
+                <!-- Language Clubs -->
+                <div>
+                    <img src="./images/studentLife/puzzle-icon.png">
+                    <h1>Language Clubs</h1>
+                    <p>Language clubs offer an opportunity for students to immerse themselves in different languages and cultures, fostering global awareness.</p>
+                </div>
+                <!-- Science Club -->
+                <div>
+                    <img src="./images/studentLife/lab-icon.png">
+                    <h1>Science Club</h1>
+                    <p>The science club allows young scientists to explore the wonders of science through fun experiments and hands-on learning.</p>
+                </div>
+                <!-- Cooking and Culinary Arts -->
+                <div>
+                    <img src="./images/studentLife/stars-icon.png">
+                    <h1>Cooking and Culinary Arts</h1>
+                    <p>Cooking classes introduce students to the joys of preparing and tasting delicious and healthy meals.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Events & Celebrations -->
+        <div>
+            <div>
+                <button>Our Features</button>
+                <h1>Events & Celebrations</h1>
+                <p>At Little Learners Academy, we celebrate every milestone and create cherished memories for our students. Throughout the year, we host a variety of events and celebrations that bring the entire school community together. Some of our memorable events include</p>
+            </div>
+            <div>
+                <!-- Annual Sports Day -->
+                <div>
+                    <img src="./images/studentLife/annual-sports-day-img.png">
+                    <h1>Annual Sports Day</h1>
+                    <p>A day filled with friendly competition, team spirit, and sportsmanship.</p>
+                </div>
+                <!-- Cultural Festivals -->
+                <div>
+                    <img src="./images/studentLife/cutural-festivals-img.png">
+                    <h1>Cultural Festivals</h1>
+                    <p>Celebrations of diverse cultural festivals, promoting cultural exchange and appreciation.</p>
+                </div>
+                <!-- Art Exhibitions -->
+                <div>
+                    <img src="./images/studentLife/art-exhibitions-img.png">
+                    <h1>Art Exhibitions</h1>
+                    <p>Showcasing our students' artistic talents through exhibitions and displays.</p>
+                </div>
+                <!-- Science Fair -->
+                <div>
+                    <img src="./images/studentLife/science-fair-img.png">
+                    <h1>Science Fair</h1>
+                    <p>A platform for budding scientists to present their innovative projects and experiments.</p>
+                </div>
+                <!-- International Day -->
+                <div>
+                    <img src="./images/studentLife/international-day.png">
+                    <h1>International Day</h1>
+                    <p>A vibrant celebration of our diverse community, embracing cultures from around the world.</p>
+                </div>
+                <!-- Graduation Ceremony -->
+                <div>
+                    <img src="./images/studentLife/graduation-ceremony-img.png">
+                    <h1>Graduation Ceremony</h1>
+                    <p>A significant milestone as our Kindergarten students prepare to embark on their academic journey.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Student Support -->
+        <div>
+            <div>
+                <button>Our Achievements</button>
+                <h1>Student Support</h1>
+                <p>At Little Learners Academy, we are committed to providing a supportive and nurturing environment that meets the unique needs of each student. Our student support services include</p>
+            </div>
+            <div>
+                <!-- Counseling -->
+                <div>
+                    <img src="./images/studentLife/lamp-icon.png">
+                    <h1>Counseling</h1>
+                    <p>Professional counselors offer guidance and support to students, addressing their emotional and social well-being.</p>
+                </div>
+                <!-- Learning Support -->
+                <div>
+                    <img src="./images/studentLife/book-icon.png">
+                    <h1>Learning Support</h1>
+                    <p>Our educators provide additional assistance to students who may require extra support in their academic journey.</p>
+                </div>
+                <!-- Parent-Teacher Collaboration -->
+                <div>
+                    <img src="./images/studentLife/users-icon.png">
+                    <h1>Parent-Teacher Collaboration</h1>
+                    <p>We foster a strong partnership with parents to ensure seamless communication and mutual support in a child's development.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- FOOTER -->
+        <footer>
+            <div>
+            <img src="images/AboutUs/Logo.png">
+                <p>We believe in the power of play to foster creativity, problem-solving skills, and imagination.</p>
+            </div>
+            <!-- Contats -->
+            <div>
+                <div>
+                    <div>
+                    <img src="images/AboutUs/Mail-Icon.png">
+                    </div>
+                    <p>hello@littlelearners.com</p>
+                </div>
+                <div>
+                    <div>
+                    <img src="images/AboutUs/Phone-Icon.png">
+                    </div>
+                    <p>+91 91813 23 2309</p>
+                </div>
+                <div>
+                    <div>
+                    <img src="images/AboutUs/location-Icon.png">
+                    </div>
+                    <p>Somewhere in the World</p>
+                </div>
+            </div>
+            <!-- Links -->
+            <div>
+                <!-- Home -->
+                <div>
+                    <h1>Home</h1>
+                    <ul>
+                        <li>
+                            <a href="#">Features</a>
+                        </li>
+                        <li>
+                            <a href="#">Our Testimonials</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Academics -->
+                <div>
+                    <h1>Academics</h1>
+                    <ul>
+                        <li>
+                            <a href="#">Special Features</a>
+                        </li>
+                        <li>
+                            <a href="#">Gallery</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- About Us -->
+                <div>
+                    <h1>About Us</h1>
+                    <ul>
+                        <li>
+                            <a href="#">Our Mission</a>
+                        </li>
+                        <li>
+                            <a href="#">Our Vission</a>
+                        </li>
+                        <li>
+                            <a href="#">Awards and Recognitions</a>
+                        </li>
+                        <li>
+                            <a href="#">History</a>
+                        </li>
+                        <li>
+                            <a href="#">Teachers</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Contact Us -->
+                <div>
+                    <h1>Contact Us</h1>
+                    <ul>
+                        <li>
+                            <a href="#">Information</a>
+                        </li>
+                        <li>
+                            <a href="#">Map & Direction</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    
+            <hr>
+            <div>
+                <div>
+                    <a href="#">Terms of Service</a>
+                </div>
+                <div>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <div>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+            <!-- Social -->
+            <div>
+                <div>
+                    <img src="./images/AboutUs/fb-icon.png">
+                </div>
+                <div>
+                    <img src="./images/AboutUs/twitter-icon.png">
+                </div>
+                <div>
+                    <img src="./images/AboutUs/linkedin-icon.png">
+                </div>
+            </div>
+    
+            <hr>
+            <p>Copyright © [2023] Little Learners Academy. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

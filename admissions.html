@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+            screens: {
+                'sm':'390px',
+                'lg':'1440px'
+        },
+          extend: {
+            fontFamily:{
+                'outfit':['Outfit','sans-serif'],
+                'raleway':['Raleway','sans-serif']
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body>
+    <div class="mt-10 px-4 mb-5 max-w-full">
+        <!-- HEADER -->
+        <header>
+            <div class="flex gap-[10px] bg-[#FFDECC] py-[12px] px-[40px] border-2 rounded-[6px] border-[#262626] mb-[14px] lg:px-[565px]">
+                <span class="text-[#262626] text-[14px] font-medium font-outfit">Admission is Open, Grab your seat now</span>
+                <img class="w-5 h-5" src="images/AboutUs/arrow-right-icon.png">
+            </div>
+            <!-- Navbar -->
+            <nav class="font-outfit text-base font-medium text-[#262626] border-2 rounded-[8px] border-[#262626] overflow-hidden">
+                <div class="bg-[#FF8D4D] py-4 px-5 b-r-2 ">
+                <img src="images/AboutUs/Logo.png">
+                </div>
+                <div >
+                    <ul class="flex flex-row items-center lg:block sm:hidden">
+                        <li class="px-[30px] py-[21px] b-l-2 hover:bg-[#FFEFE5]">
+                            <a href="./index.html">Home</a>
+                        </li>
+                        <li class="px-[30px] py-[21px] b-l-2 hover:bg-[#FFEFE5]">
+                            <a href="./aboutUs.html">About Us</a>
+                        </li>
+                        <li class="px-[30px] py-[21px] b-l-2 hover:bg-[#FFEFE5]">
+                            <a href="./academics.html">Academics</a>
+                        </li>
+                        <li class="px-[30px] py-[21px] b-l-2 hover:bg-[#FFEFE5]">
+                            <a href="./admissions.html">Admissions</a>
+                        </li>
+                        <li class="px-[30px] py-[21px] b-l-2 hover:bg-[#FFEFE5]">
+                            <a href="./studentLife.html">Student Life</a>
+                        </li>
+                        <li class="px-[30px] py-[21px] b-l-2 hover:bg-[#FFEFE5]">
+                            <a href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex sm:block lg:hidden bg-[#FFEFE5] py-[17px] px-[30px]">
+                <img class="w-7 h-7" src="images/AboutUs/burger-icon.png">
+                </div>
+            </nav>
+        </header>
+        <!-- Admissions -->
+        <div>
+            <img src="images/AboutUs/overview-img.png">
+            <button>Admissions</button>
+            <h1>Join Our Family of Young Learners</h1>
+            <p>At Little Learners Academy, we welcome you to embark on an exciting educational journey for your child. Our admission process is designed to be transparent, straightforward, and inclusive. Here's a step-by-step guide to joining our school</p>
+        </div>
+        <!-- Process -->
+        <div>
+            <div>
+                <button>Process</button>
+                <h1>Admission Process</h1>
+                <p>Embark on a remarkable educational journey with us! Our Admission and Enrollment process is the gateway to providing your child with an exceptional learning experience at our kindergarten school</p>
+            </div>
+            <div>
+                <div>
+                    <div>01</div>
+                    <img src="./images/admissions/link-img.png">
+                    <div>
+                        <h1>Inquiry</h1>
+                        <p>Submit an inquiry form through our website or contact our admissions office to express your interest in Little Learners Academy.</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="./images/admissions/link2-img.png">
+                    <div>02</div>
+                    <img src="./images/admissions/link-img.png">
+                    <div>
+                        <h1>School Tour</h1>
+                        <p>Schedule a personalized school tour to explore our campus, meet our staff, and gain insights into our nurturing learning environment.</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="./images/admissions/link2-img.png">
+                    <div>03</div>
+                    <img src="./images/admissions/link-img.png">
+                    <div>
+                        <h1>Application Form</h1>
+                        <p>Complete the application form and provide the required documents, including your child's birth certificate, medical records, and any previous academic records (if applicable).</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="./images/admissions/link2-img.png">
+                    <div>04</div>
+                    <img src="./images/admissions/link-img.png">
+                    <div>
+                        <h1>Parent Interview</h1>
+                        <p>We value parent engagement, and a meeting with our admissions team allows us to understand your child's needs and ensure Little Learners Academy aligns with your family's expectations.</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="./images/admissions/link2-img.png">
+                    <div>05</div>
+                    <img src="./images/admissions/link-img.png">
+                    <div>
+                        <h1>Student Assessment</h1>
+                        <p>For certain age groups, a student assessment may be conducted to understand their developmental progress and ensure the best placement.</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="./images/admissions/link2-img.png">
+                    <div>06</div>
+                    <img src="./images/admissions/link-img.png">
+                    <div>
+                        <h1>Acceptance</h1>
+                        <p>Once the admission process is complete, you will receive an official acceptance letter from Little Learners Academy.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Our Features -->
+        <div>
+            <div>
+                <button>Our Features</button>
+                <h1>Fee Structure</h1>
+                <p>Our fee structure is transparent, and we strive to keep our fees competitive within the education sector. The fees vary based on the program, age group, and any additional services chosen.</p>
+            </div>
+        </div>
+        <!-- Programs -->
+        <div>
+            <div>
+                <div>Program</div>
+                <div>Age Group</div>
+                <div>Annual Tuition</div>
+                <div>Registration Fee</div>
+                <div>Activity Fee</div>
+            </div>
+            <!-- Nursery -->
+            <div>
+                <div>Nursery</div>
+                <div>2 - 3 Years</div>
+                <div>$1,686</div>
+                <div>$162</div>
+                <div>$12</div>
+            </div>
+            <!-- Pre - Kindergartens -->
+            <div>
+                <div>Pre - Kindergartens</div>
+                <div>3 - 4 Years</div>
+                <div>$2,686</div>
+                <div>$220</div>
+                <div>$16</div>
+            </div>
+            <!-- Kindergarten -->
+            <div>
+                <div>Kindergarten</div>
+                <div>4 - 5 Years</div>
+                <div>$3,686</div>
+                <div>$340</div>
+                <div>$20</div>
+            </div>
+        </div>
+         <!-- Additional Services -->
+         <div>
+            <div>
+                Additional Services
+            </div>
+            <div>
+                <div>Before and After-School Care</div>
+                <div>$120 / per month</div>
+            </div>
+            <div>
+                <div>Language Immersion Program</div>
+                <div>$60 / per semester</div>
+            </div>
+            <div>
+                <div>Transportation (optional)</div>
+                <div>$80 / per month</div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer>
+            <div>
+            <img src="images/AboutUs/Logo.png">
+                <p>We believe in the power of play to foster creativity, problem-solving skills, and imagination.</p>
+            </div>
+            <!-- Contats -->
+            <div>
+                <div>
+                    <div>
+                    <img src="images/AboutUs/Mail-Icon.png">
+                    </div>
+                    <p>hello@littlelearners.com</p>
+                </div>
+                <div>
+                    <div>
+                    <img src="images/AboutUs/Phone-Icon.png">
+                    </div>
+                    <p>+91 91813 23 2309</p>
+                </div>
+                <div>
+                    <div>
+                    <img src="images/AboutUs/location-Icon.png">
+                    </div>
+                    <p>Somewhere in the World</p>
+                </div>
+            </div>
+            <!-- Links -->
+            <div>
+                <!-- Home -->
+                <div>
+                    <h1>Home</h1>
+                    <ul>
+                        <li>
+                            <a href="#">Features</a>
+                        </li>
+                        <li>
+                            <a href="#">Our Testimonials</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Academics -->
+                <div>
+                    <h1>Academics</h1>
+                    <ul>
+                        <li>
+                            <a href="#">Special Features</a>
+                        </li>
+                        <li>
+                            <a href="#">Gallery</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- About Us -->
+                <div>
+                    <h1>About Us</h1>
+                    <ul>
+                        <li>
+                            <a href="#">Our Mission</a>
+                        </li>
+                        <li>
+                            <a href="#">Our Vission</a>
+                        </li>
+                        <li>
+                            <a href="#">Awards and Recognitions</a>
+                        </li>
+                        <li>
+                            <a href="#">History</a>
+                        </li>
+                        <li>
+                            <a href="#">Teachers</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Contact Us -->
+                <div>
+                    <h1>Contact Us</h1>
+                    <ul>
+                        <li>
+                            <a href="#">Information</a>
+                        </li>
+                        <li>
+                            <a href="#">Map & Direction</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <div>
+                    <a href="#">Terms of Service</a>
+                </div>
+                <div>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <div>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+            <!-- Social -->
+            <div>
+                <div>
+                    <img src="./images/AboutUs/fb-icon.png">
+                </div>
+                <div>
+                    <img src="./images/AboutUs/twitter-icon.png">
+                </div>
+                <div>
+                    <img src="./images/AboutUs/linkedin-icon.png">
+                </div>
+            </div>
+            <hr>
+            <p>Copyright © [2023] Little Learners Academy. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

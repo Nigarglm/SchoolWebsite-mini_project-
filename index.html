@@ -5,399 +5,414 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>School Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
         theme: {
+            screens: {
+                'sm':'390px',
+                'lg':'1440px'
+        },
           extend: {
+            fontFamily:{
+                'outfit':['Outfit','sans-serif'],
+                'raleway':['Raleway','sans-serif']
+            }
           }
         }
       }
     </script>
 </head>
 <body>
-    <!-- HEADER -->
-    <header>
-        <div>
-            <span>Admission is Open, Grab your seat now</span>
-        <img src="images/AboutUs/arrow-right-icon.png">
-        </div>
-        <!-- Navbar -->
-        <nav>
-            <div>
-            <img src="images/AboutUs/Logo.png">
+    <div class="mt-10 px-4 mb-5 max-w-full">
+        <!-- HEADER -->
+        <header>
+            <div class="flex gap-[10px] bg-[#FFDECC] py-[12px] px-[40px] border-2 rounded-[6px] border-[#262626] mb-[14px] lg:px-[565px]">
+                <span class="text-[#262626] text-[14px] font-medium font-outfit">Admission is Open, Grab your seat now</span>
+                <img class="w-5 h-5" src="images/AboutUs/arrow-right-icon.png">
             </div>
-            <ul>
-                <li>
-                    <a href="./index.html">Home</a>
-                </li>
-                <li>
-                    <a href="./aboutUs.html">About Us</a>
-                </li>
-                <li>
-                    <a href="#">Academics</a>
-                </li>
-                <li>
-                    <a href="#">Admissions</a>
-                </li>
-                <li>
-                    <a href="#">Student Life</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-            </ul>
-            <div>
-            <img src="images/AboutUs/burger-icon.png">
-            </div>
-        </nav>
-    </header>
-
-    <!-- Section-1 -->
-    <div>
-        <img src="./images/MainPage/main-img.png">
-        <div>
-            <p>Welcome to Little Learners Academy</p>
-            <hr>
-            <h1>Where Young Minds Blossom and Dreams Take Flight. </h1>
-            <p>Our kinder garden school provides a nurturing and stimulating environment, fostering a love for learning that lasts a lifetime. Join us as we embark on an exciting educational journey together!</p>
-            <div>
-                <div>
-                    <h5>+7000</h5>
-                    <p>Students Passed Out</p>
+            <!-- Navbar -->
+            <nav class="font-outfit text-base font-medium text-[#262626] border-2 rounded-[8px] border-[#262626] overflow-hidden">
+                <div class="bg-[#FF8D4D] py-4 px-5 b-r-2 ">
+                <img src="images/AboutUs/Logo.png">
                 </div>
-                <div>
-                    <h5>+37</h5>
-                    <p>Awards & Recognitions</p>
+                <div >
+                    <ul class="flex flex-row items-center lg:block sm:hidden">
+                        <li class="px-[30px] py-[21px] b-l-2 hover:bg-[#FFEFE5]">
+                            <a href="./index.html">Home</a>
+                        </li>
+                        <li class="px-[30px] py-[21px] b-l-2 hover:bg-[#FFEFE5]">
+                            <a href="./aboutUs.html">About Us</a>
+                        </li>
+                        <li class="px-[30px] py-[21px] b-l-2 hover:bg-[#FFEFE5]">
+                            <a href="./academics.html">Academics</a>
+                        </li>
+                        <li class="px-[30px] py-[21px] b-l-2 hover:bg-[#FFEFE5]">
+                            <a href="./admissions.html">Admissions</a>
+                        </li>
+                        <li class="px-[30px] py-[21px] b-l-2 hover:bg-[#FFEFE5]">
+                            <a href="./studentLife.html">Student Life</a>
+                        </li>
+                        <li class="px-[30px] py-[21px] b-l-2 hover:bg-[#FFEFE5]">
+                            <a href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
                 </div>
+                <div class="flex sm:block lg:hidden bg-[#FFEFE5] py-[17px] px-[30px]">
+                <img class="w-7 h-7" src="images/AboutUs/burger-icon.png">
+                </div>
+            </nav>
+        </header>
+    
+        <!-- Section-1 -->
+        <div>
+            <img src="./images/MainPage/main-img.png">
+            <div>
+                <p>Welcome to Little Learners Academy</p>
+                <hr>
+                <h1>Where Young Minds Blossom and Dreams Take Flight. </h1>
+                <p>Our kinder garden school provides a nurturing and stimulating environment, fostering a love for learning that lasts a lifetime. Join us as we embark on an exciting educational journey together!</p>
                 <div>
-                    <h5>+15</h5>
-                    <p>Experience Educators</p>
+                    <div>
+                        <h5>+7000</h5>
+                        <p>Students Passed Out</p>
+                    </div>
+                    <div>
+                        <h5>+37</h5>
+                        <p>Awards & Recognitions</p>
+                    </div>
+                    <div>
+                        <h5>+15</h5>
+                        <p>Experience Educators</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Our Benefits -->
-    <div>
-        <div>
-            <button>Children Deserve Bright Future</button>
-            <h1>Our Benefits</h1>
-            <p>With a dedicated team of experienced educators, state-of-the-art facilities, and a comprehensive curriculum, we aim to lay a strong foundation for your child's future.</p>
-        </div>
+        <!-- Our Benefits -->
         <div>
             <div>
-                <img src="./images/MainPage/grad-cap-icon.png">
-                <h1>Holistic Learning Approach</h1>
-                <p>Our curriculum focuses on nurturing cognitive, social, emotional, and physical development, ensuring a well-rounded education.</p>
-            </div>
-            <div>
-                <img src="./images/MainPage/crown-icon.png">
-                <h1>Experienced Educators</h1>
-                <p>Our passionate and qualified teachers create a supportive and stimulating learning environment.</p>
-            </div>
-            <div>
-                <img src="./images/MainPage/facemask-icon.png">
-                <h1>Nurturing Environment</h1>
-                <p>We prioritize safety and provide a warm and caring atmosphere for every child.</p>
-            </div>
-            <div>
-                <img src="./images/MainPage/flag-icon.png">
-                <h1>Play-Based Learning</h1>
-                <p>We believe in the power of play to foster creativity, problem-solving skills, and imagination.</p>
-            </div>
-            <div>
-                <img src="./images/MainPage/ball-icon.png">
-                <h1>Individualized Attention</h1>
-                <p>Our small class sizes enable personalized attention, catering to each child's unique needs.</p>
-            </div>
-            <div>
-                <img src="./images/MainPage/users-icon.png">
-                <h1>Parent Involvement</h1>
-                <p>We foster a strong parent-school partnership to ensure seamless communication and collaboration.</p>
-            </div>
-        </div>
-    </div>
-    <!-- Our Testimonials -->
-    <div>
-        <div>
-            <button>Their Happy Words 🤗</button>
-            <h1>Our Testimonials</h1>
-            <p>Our testimonials are heartfelt reflections of the nurturing environment we provide, where children flourish both academically and emotionally.</p>
-        </div>
-        <div>
-            <img src="">
-            <h1>Jennifer B</h1>
-            <div>
-                <img src="./images/MainPage/star-icon.png">
-                <img src="./images/MainPage/star-icon.png">
-                <img src="./images/MainPage/star-icon.png">
-                <img src="./images/MainPage/star-icon.png">
-                <img src="./images/MainPage/star-icon.png">
-            </div>
-            <p>Little Learners Academy has been a second home for my child. The caring staff and engaging programs have made her excited to go to school every day!</p>
-        </div>
-        <div>
-            <button>
-                <img src="./images/AboutUs/arrow-left-icon.png">
-            </button>
-            <button>
-                <img src="./images/AboutUs/arrow-right-icon.png">
-            </button>
-        </div>
-    </div>
-    <!-- Questions -->
-    <div>
-        <div>
-            <button>Solutions For The Doubts</button>
-            <h1>Frequently Asked Questions</h1>
-            <p>Find all the essential information you need in our FAQ section, designed to address the most frequently asked questions and help you make informed decisions for your child's education.</p>
-        </div>
-        <div>
-            <!-- Question-1 -->
-            <div>
-                <div>
-                    <h1>What are the school hours at Little Learners Academy?</h1>
-                    <button>+</button>
-                    <button>-</button>
-                </div>
-                    <hr>
-                    <p>Our school hours are from 8:00 AM to 3:00 PM, Monday to Friday. We also offer extended care options for parents who need early drop-off or late pick-up.</p>
-            </div>
-            <!-- Question-2 -->
-            <div>
-                <div>
-                    <h1>Is there a uniform policy for students?</h1>
-                    <button>+</button>
-                    <button>-</button>
-                </div>
-                    <hr>
-                    <p>Our school hours are from 8:00 AM to 3:00 PM, Monday to Friday. We also offer extended care options for parents who need early drop-off or late pick-up.</p>
-            </div>
-            <!-- Question-3 -->
-            <div>
-                <div>
-                    <h1>What extracurricular activities are available for students?</h1>
-                    <button>+</button>
-                    <button>-</button>
-                </div>
-                    <hr>
-                    <p>Our school hours are from 8:00 AM to 3:00 PM, Monday to Friday. We also offer extended care options for parents who need early drop-off or late pick-up.</p>
-            </div>
-            <!-- Question-4 -->
-            <div>
-                <div>
-                    <h1>What extracurricular activities are available for students?</h1>
-                    <button>+</button>
-                    <button>-</button>
-                </div>
-                    <hr>
-                    <p>Our school hours are from 8:00 AM to 3:00 PM, Monday to Friday. We also offer extended care options for parents who need early drop-off or late pick-up.</p>
-            </div>
-            <!-- Question-5 -->
-            <div>
-                <div>
-                    <h1>How do you handle food allergies and dietary restrictions?</h1>
-                    <button>+</button>
-                    <button>-</button>
-                </div>
-                    <hr>
-                    <p>Our school hours are from 8:00 AM to 3:00 PM, Monday to Friday. We also offer extended care options for parents who need early drop-off or late pick-up.</p>
-            </div>
-            <!-- Question-6 -->
-            <div>
-                <div>
-                    <h1>What is the teacher-to-student ratio at Little Learners Academy?</h1>
-                    <button>+</button>
-                    <button>-</button>
-                </div>
-                    <hr>
-                    <p>Our school hours are from 8:00 AM to 3:00 PM, Monday to Friday. We also offer extended care options for parents who need early drop-off or late pick-up.</p>
-            </div>
-            <!-- Question-7 -->
-            <div>
-                <div>
-                    <h1>How do you handle discipline and behavior management?</h1>
-                    <button>+</button>
-                    <button>-</button>
-                </div>
-                    <hr>
-                    <p>Our school hours are from 8:00 AM to 3:00 PM, Monday to Friday. We also offer extended care options for parents who need early drop-off or late pick-up.</p>
-            </div>
-            <!-- Question-8 -->
-            <div>
-                <div>
-                    <h1>How do I apply for admission to Little Learners Academy?</h1>
-                    <button>+</button>
-                    <button>-</button>
-                </div>
-                    <hr>
-                    <p>Our school hours are from 8:00 AM to 3:00 PM, Monday to Friday. We also offer extended care options for parents who need early drop-off or late pick-up.</p>
-            </div>
-        </div>
-    </div>
-    <!-- Explore More -->
-    <div>
-        <div>
-            <button>Explore More</button>
-            <h1>Navigate through our Pages</h1>
-            <p>Your gateway to discovering a wealth of valuable information about our kindergarten school, Feel free to explore and learn more about the enriching experiences that await your child at our kindergarten school</p>
-        </div>
-        <!-- About Us -->
-        <div>
-            <h1>About Us</h1>
-            <img src="./images/MainPage/explore-section-icon.png">
-            <p>Discover our Mission, Values, and our unwavering commitment to providing the best learning experience for your child. Learn about our passionate educators and our engaging approach to early education.</p>
-            <button>Learn More 
-                <img src="./images/AboutUs/arrow-right-icon.png">
-            </button>
-        </div>
-        <!-- Academics -->
-        <div>
-            <h1>Academics</h1>
-            <img src="./images/MainPage/explore-section-icon.png">
-            <p>Delve into our comprehensive academic programs designed to stimulate young minds, foster creativity, and encourage a love for learning. Explore our well-rounded curriculum that nurtures both intellectual and social development.</p>
-            <button>Learn More 
-                <img src="./images/AboutUs/arrow-right-icon.png">
-            </button>
-        </div>
-        <!-- Student Life -->
-        <div>
-            <h1>Student Life</h1>
-            <img src="./images/MainPage/explore-section-icon.png">
-            <p>Peek into the vibrant and enriching world of Student Life at Little Learners Academy. Discover the array of extracurricular activities, arts and crafts, sports, and social events that make our school experience truly memorable.</p>
-            <button>Learn More 
-                <img src="./images/AboutUs/arrow-right-icon.png">
-            </button>
-        </div>
-        <!-- Admissions -->
-        <div>
-            <h1>Admissions</h1>
-            <img src="./images/MainPage/explore-section-icon.png">
-            <p>Learn about our Enrollment Process and how to secure your child's place at Little Learners Academy. Find information about our admission requirements, application deadlines, and available spaces.</p>
-            <button>Learn More 
-                <img src="./images/AboutUs/arrow-right-icon.png">
-            </button>
-        </div>
-    </div>
-
-    <!-- FOOTER -->
-    <footer>
-        <div>
-        <img src="images/AboutUs/Logo.png">
-            <p>We believe in the power of play to foster creativity, problem-solving skills, and imagination.</p>
-        </div>
-        <!-- Contats -->
-        <div>
-            <div>
-                <div>
-                <img src="images/AboutUs/Mail-Icon.png">
-                </div>
-                <p>hello@littlelearners.com</p>
+                <button>Children Deserve Bright Future</button>
+                <h1>Our Benefits</h1>
+                <p>With a dedicated team of experienced educators, state-of-the-art facilities, and a comprehensive curriculum, we aim to lay a strong foundation for your child's future.</p>
             </div>
             <div>
                 <div>
-                <img src="images/AboutUs/Phone-Icon.png">
+                    <img src="./images/MainPage/grad-cap-icon.png">
+                    <h1>Holistic Learning Approach</h1>
+                    <p>Our curriculum focuses on nurturing cognitive, social, emotional, and physical development, ensuring a well-rounded education.</p>
                 </div>
-                <p>+91 91813 23 2309</p>
-            </div>
-            <div>
                 <div>
-                <img src="images/AboutUs/location-Icon.png">
+                    <img src="./images/MainPage/crown-icon.png">
+                    <h1>Experienced Educators</h1>
+                    <p>Our passionate and qualified teachers create a supportive and stimulating learning environment.</p>
                 </div>
-                <p>Somewhere in the World</p>
+                <div>
+                    <img src="./images/MainPage/facemask-icon.png">
+                    <h1>Nurturing Environment</h1>
+                    <p>We prioritize safety and provide a warm and caring atmosphere for every child.</p>
+                </div>
+                <div>
+                    <img src="./images/MainPage/flag-icon.png">
+                    <h1>Play-Based Learning</h1>
+                    <p>We believe in the power of play to foster creativity, problem-solving skills, and imagination.</p>
+                </div>
+                <div>
+                    <img src="./images/MainPage/ball-icon.png">
+                    <h1>Individualized Attention</h1>
+                    <p>Our small class sizes enable personalized attention, catering to each child's unique needs.</p>
+                </div>
+                <div>
+                    <img src="./images/MainPage/users-icon.png">
+                    <h1>Parent Involvement</h1>
+                    <p>We foster a strong parent-school partnership to ensure seamless communication and collaboration.</p>
+                </div>
             </div>
         </div>
-        <!-- Links -->
+        <!-- Our Testimonials -->
         <div>
-            <!-- Home -->
             <div>
-                <h1>Home</h1>
-                <ul>
-                    <li>
-                        <a href="#">Features</a>
-                    </li>
-                    <li>
-                        <a href="#">Our Testimonials</a>
-                    </li>
-                    <li>
-                        <a href="#">FAQ</a>
-                    </li>
-                </ul>
+                <button>Their Happy Words 🤗</button>
+                <h1>Our Testimonials</h1>
+                <p>Our testimonials are heartfelt reflections of the nurturing environment we provide, where children flourish both academically and emotionally.</p>
             </div>
-            <!-- Academics -->
             <div>
-                <h1>Academics</h1>
-                <ul>
-                    <li>
-                        <a href="#">Special Features</a>
-                    </li>
-                    <li>
-                        <a href="#">Gallery</a>
-                    </li>
-                </ul>
+                <img src="">
+                <h1>Jennifer B</h1>
+                <div>
+                    <img src="./images/MainPage/star-icon.png">
+                    <img src="./images/MainPage/star-icon.png">
+                    <img src="./images/MainPage/star-icon.png">
+                    <img src="./images/MainPage/star-icon.png">
+                    <img src="./images/MainPage/star-icon.png">
+                </div>
+                <p>Little Learners Academy has been a second home for my child. The caring staff and engaging programs have made her excited to go to school every day!</p>
+            </div>
+            <div>
+                <button>
+                    <img src="./images/AboutUs/arrow-left-icon.png">
+                </button>
+                <button>
+                    <img src="./images/AboutUs/arrow-right-icon.png">
+                </button>
+            </div>
+        </div>
+        <!-- Questions -->
+        <div>
+            <div>
+                <button>Solutions For The Doubts</button>
+                <h1>Frequently Asked Questions</h1>
+                <p>Find all the essential information you need in our FAQ section, designed to address the most frequently asked questions and help you make informed decisions for your child's education.</p>
+            </div>
+            <div>
+                <!-- Question-1 -->
+                <div>
+                    <div>
+                        <h1>What are the school hours at Little Learners Academy?</h1>
+                        <button>+</button>
+                        <button>-</button>
+                    </div>
+                        <hr>
+                        <p>Our school hours are from 8:00 AM to 3:00 PM, Monday to Friday. We also offer extended care options for parents who need early drop-off or late pick-up.</p>
+                </div>
+                <!-- Question-2 -->
+                <div>
+                    <div>
+                        <h1>Is there a uniform policy for students?</h1>
+                        <button>+</button>
+                        <button>-</button>
+                    </div>
+                        <hr>
+                        <p>Our school hours are from 8:00 AM to 3:00 PM, Monday to Friday. We also offer extended care options for parents who need early drop-off or late pick-up.</p>
+                </div>
+                <!-- Question-3 -->
+                <div>
+                    <div>
+                        <h1>What extracurricular activities are available for students?</h1>
+                        <button>+</button>
+                        <button>-</button>
+                    </div>
+                        <hr>
+                        <p>Our school hours are from 8:00 AM to 3:00 PM, Monday to Friday. We also offer extended care options for parents who need early drop-off or late pick-up.</p>
+                </div>
+                <!-- Question-4 -->
+                <div>
+                    <div>
+                        <h1>What extracurricular activities are available for students?</h1>
+                        <button>+</button>
+                        <button>-</button>
+                    </div>
+                        <hr>
+                        <p>Our school hours are from 8:00 AM to 3:00 PM, Monday to Friday. We also offer extended care options for parents who need early drop-off or late pick-up.</p>
+                </div>
+                <!-- Question-5 -->
+                <div>
+                    <div>
+                        <h1>How do you handle food allergies and dietary restrictions?</h1>
+                        <button>+</button>
+                        <button>-</button>
+                    </div>
+                        <hr>
+                        <p>Our school hours are from 8:00 AM to 3:00 PM, Monday to Friday. We also offer extended care options for parents who need early drop-off or late pick-up.</p>
+                </div>
+                <!-- Question-6 -->
+                <div>
+                    <div>
+                        <h1>What is the teacher-to-student ratio at Little Learners Academy?</h1>
+                        <button>+</button>
+                        <button>-</button>
+                    </div>
+                        <hr>
+                        <p>Our school hours are from 8:00 AM to 3:00 PM, Monday to Friday. We also offer extended care options for parents who need early drop-off or late pick-up.</p>
+                </div>
+                <!-- Question-7 -->
+                <div>
+                    <div>
+                        <h1>How do you handle discipline and behavior management?</h1>
+                        <button>+</button>
+                        <button>-</button>
+                    </div>
+                        <hr>
+                        <p>Our school hours are from 8:00 AM to 3:00 PM, Monday to Friday. We also offer extended care options for parents who need early drop-off or late pick-up.</p>
+                </div>
+                <!-- Question-8 -->
+                <div>
+                    <div>
+                        <h1>How do I apply for admission to Little Learners Academy?</h1>
+                        <button>+</button>
+                        <button>-</button>
+                    </div>
+                        <hr>
+                        <p>Our school hours are from 8:00 AM to 3:00 PM, Monday to Friday. We also offer extended care options for parents who need early drop-off or late pick-up.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Explore More -->
+        <div>
+            <div>
+                <button>Explore More</button>
+                <h1>Navigate through our Pages</h1>
+                <p>Your gateway to discovering a wealth of valuable information about our kindergarten school, Feel free to explore and learn more about the enriching experiences that await your child at our kindergarten school</p>
             </div>
             <!-- About Us -->
             <div>
                 <h1>About Us</h1>
-                <ul>
-                    <li>
-                        <a href="#">Our Mission</a>
-                    </li>
-                    <li>
-                        <a href="#">Our Vission</a>
-                    </li>
-                    <li>
-                        <a href="#">Awards and Recognitions</a>
-                    </li>
-                    <li>
-                        <a href="#">History</a>
-                    </li>
-                    <li>
-                        <a href="#">Teachers</a>
-                    </li>
-                </ul>
+                <img src="./images/MainPage/explore-section-icon.png">
+                <p>Discover our Mission, Values, and our unwavering commitment to providing the best learning experience for your child. Learn about our passionate educators and our engaging approach to early education.</p>
+                <button>Learn More 
+                    <img src="./images/AboutUs/arrow-right-icon.png">
+                </button>
             </div>
-            <!-- Contact Us -->
+            <!-- Academics -->
             <div>
-                <h1>Contact Us</h1>
-                <ul>
-                    <li>
-                        <a href="#">Information</a>
-                    </li>
-                    <li>
-                        <a href="#">Map & Direction</a>
-                    </li>
-                </ul>
+                <h1>Academics</h1>
+                <img src="./images/MainPage/explore-section-icon.png">
+                <p>Delve into our comprehensive academic programs designed to stimulate young minds, foster creativity, and encourage a love for learning. Explore our well-rounded curriculum that nurtures both intellectual and social development.</p>
+                <button>Learn More 
+                    <img src="./images/AboutUs/arrow-right-icon.png">
+                </button>
+            </div>
+            <!-- Student Life -->
+            <div>
+                <h1>Student Life</h1>
+                <img src="./images/MainPage/explore-section-icon.png">
+                <p>Peek into the vibrant and enriching world of Student Life at Little Learners Academy. Discover the array of extracurricular activities, arts and crafts, sports, and social events that make our school experience truly memorable.</p>
+                <button>Learn More 
+                    <img src="./images/AboutUs/arrow-right-icon.png">
+                </button>
+            </div>
+            <!-- Admissions -->
+            <div>
+                <h1>Admissions</h1>
+                <img src="./images/MainPage/explore-section-icon.png">
+                <p>Learn about our Enrollment Process and how to secure your child's place at Little Learners Academy. Find information about our admission requirements, application deadlines, and available spaces.</p>
+                <button>Learn More 
+                    <img src="./images/AboutUs/arrow-right-icon.png">
+                </button>
             </div>
         </div>
-
-        <hr>
-        <div>
+    
+        <!-- FOOTER -->
+        <footer>
             <div>
-                <a href="#">Terms of Service</a>
+            <img src="images/AboutUs/Logo.png">
+                <p>We believe in the power of play to foster creativity, problem-solving skills, and imagination.</p>
             </div>
+            <!-- Contats -->
             <div>
-                <a href="#">Privacy Policy</a>
+                <div>
+                    <div>
+                    <img src="images/AboutUs/Mail-Icon.png">
+                    </div>
+                    <p>hello@littlelearners.com</p>
+                </div>
+                <div>
+                    <div>
+                    <img src="images/AboutUs/Phone-Icon.png">
+                    </div>
+                    <p>+91 91813 23 2309</p>
+                </div>
+                <div>
+                    <div>
+                    <img src="images/AboutUs/location-Icon.png">
+                    </div>
+                    <p>Somewhere in the World</p>
+                </div>
             </div>
+            <!-- Links -->
             <div>
-                <a href="#">Cookie Policy</a>
+                <!-- Home -->
+                <div>
+                    <h1>Home</h1>
+                    <ul>
+                        <li>
+                            <a href="#">Features</a>
+                        </li>
+                        <li>
+                            <a href="#">Our Testimonials</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Academics -->
+                <div>
+                    <h1>Academics</h1>
+                    <ul>
+                        <li>
+                            <a href="#">Special Features</a>
+                        </li>
+                        <li>
+                            <a href="#">Gallery</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- About Us -->
+                <div>
+                    <h1>About Us</h1>
+                    <ul>
+                        <li>
+                            <a href="#">Our Mission</a>
+                        </li>
+                        <li>
+                            <a href="#">Our Vission</a>
+                        </li>
+                        <li>
+                            <a href="#">Awards and Recognitions</a>
+                        </li>
+                        <li>
+                            <a href="#">History</a>
+                        </li>
+                        <li>
+                            <a href="#">Teachers</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Contact Us -->
+                <div>
+                    <h1>Contact Us</h1>
+                    <ul>
+                        <li>
+                            <a href="#">Information</a>
+                        </li>
+                        <li>
+                            <a href="#">Map & Direction</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <!-- Social -->
-        <div>
+    
+            <hr>
             <div>
-                <img src="./images/AboutUs/fb-icon.png">
+                <div>
+                    <a href="#">Terms of Service</a>
+                </div>
+                <div>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <div>
+                    <a href="#">Cookie Policy</a>
+                </div>
             </div>
+            <!-- Social -->
             <div>
-                <img src="./images/AboutUs/twitter-icon.png">
+                <div>
+                    <img src="./images/AboutUs/fb-icon.png">
+                </div>
+                <div>
+                    <img src="./images/AboutUs/twitter-icon.png">
+                </div>
+                <div>
+                    <img src="./images/AboutUs/linkedin-icon.png">
+                </div>
             </div>
-            <div>
-                <img src="./images/AboutUs/linkedin-icon.png">
-            </div>
-        </div>
-
-        <hr>
-        <p>Copyright © [2023] Little Learners Academy. All rights reserved.</p>
-    </footer>
+    
+            <hr>
+            <p>Copyright © [2023] Little Learners Academy. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
 </html>
