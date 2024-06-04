@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>School Website</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -12,369 +12,431 @@
     <script>
       tailwind.config = {
         theme: {
+            screens: {
+                'sm':'390px',
+                'lg':'1440px'
+        },
           extend: {
+            fontFamily:{
+                'outfit':['Outfit','sans-serif'],
+                'raleway':['Raleway','sans-serif']
+            }
           }
         }
       }
     </script>
 </head>
-<body>
-    <!-- HEADER -->
-    <header>
-        <div>
-            <span>Admission is Open, Grab your seat now</span>
-        <img src="images/AboutUs/arrow-right-icon.png">
-        </div>
-        <!-- Navbar -->
-        <nav>
-            <div>
-            <img src="images/AboutUs/Logo.png">
+<body class="bg-[#FFF5F0]">
+    <div class="px-4 py-10 mb-5 max-w-full lg:py-4 lg:px-[50px]">
+        <!-- HEADER -->
+        <header>
+           <a href="#">
+            <div class="flex gap-[10px] bg-[#FFDECC] py-3 px-5 border-2 rounded-[6px] border-[#262626] mb-[14px] lg:px-[512px] justify-center items-center">
+                <span class="text-[#262626] text-[14px] font-medium font-outfit">Admission is Open, Grab your seat now</span>
+                <img class="w-5 h-5" src="images/AboutUs/arrow-right-icon.png">
             </div>
-            <ul>
-                <li>
-                    <a href="./index.html">Home</a>
-                </li>
-                <li>
-                    <a href="./aboutUs.html">About Us</a>
-                </li>
-                <li>
-                    <a href="./academics.html">Academics</a>
-                </li>
-                <li>
-                    <a href="./admissions.html">Admissions</a>
-                </li>
-                <li>
-                    <a href="./studentLife.html">Student Life</a>
-                </li>
-                <li>
-                    <a href="./contact.html">Contact</a>
-                </li>
-            </ul>
-            <div>
-            <img src="images/AboutUs/burger-icon.png">
-            </div>
-        </nav>
-    </header>
+           </a>
+            <!-- Navbar -->
+            <nav class="flex justify-between font-outfit text-base font-medium text-[#262626] border-2 rounded-[8px] border-[#262626] overflow-hidden bg-[#fff]">
+                <div class="bg-[#FF8D4D] py-4 px-5 b-r-2 ">
+                    <a href="./index.html"><img src="images/AboutUs/Logo.png"></a>
+                </div>
+                <div></div>
+                <ul class="items-end sm:hidden lg:flex">
+                    <a href="./index.html">
+                        <li class="px-[30px] py-[21px] border-l-2 border-[#262626] hover:bg-[#FFEFE5]">
+                            Home
+                        </li>
+                    </a>
+                    <a href="./aboutUs.html">
+                        <li class="px-[30px] py-[21px] border-l-2 border-[#262626] hover:bg-[#FFEFE5]">
+                            About Us
+                        </li>
+                    </a>
+                    <a href="./academics.html">
+                        <li class="px-[30px] py-[21px] border-l-2 border-[#262626] hover:bg-[#FFEFE5]">
+                            Academics
+                        </li>
+                    </a>
+                    <a href="./admissions.html">
+                        <li class="px-[30px] py-[21px] border-l-2 border-[#262626] hover:bg-[#FFEFE5]">
+                            Admissions
+                        </li>
+                    </a>
+                    <a href="./studentLife.html">
+                        <li class="px-[30px] py-[21px] border-l-2 border-[#262626] hover:bg-[#FFEFE5]">
+                            Student Life
+                        </li>
+                    </a>
+                    <a href="./contact.html">
+                        <li class="px-[30px] py-[21px] border-l-2 border-[#262626] bg-[#FFAE80] hover:bg-[#FFEFE5]">
+                            Contact
+                        </li>
+                    </a>
+                </ul>
+                <div class="flex lg:hidden bg-[#FFEFE5] py-[17px] px-[30px] border-l-2 border-[#262626]">
+                <img class="w-7 h-7" src="images/AboutUs/burger-icon.png">
+                </div>
+            </nav>
+        </header>
 
     <!-- BODY -->
     <body>
         <!-- Overview -->
-        <div>
-        <img src="images/AboutUs/overview-img.png">
-            <button>Overview</button>
-            <h1>Welcome to Little Learners Academy</h1>
-            <p>A leading kinder garden school dedicated to providing a nurturing and stimulating environment for young learners. With a commitment to excellence in early education, we believe in shaping curious minds and building a strong foundation for a lifelong love of learning. Our holistic approach fosters intellectual, social, emotional, and physical development, ensuring that each child reaches their full potential.</p>
+        <div class="mt-10 px-[30px] py-[50px] text-center flex flex-col items-center justify-center bg-[#fff] border-2 border-[#262626] rounded-[10px] shadow-[6px_6px_0_1px] shadow-[#1E1E1E] lg:flex-row lg:items-center lg:gap-[50px] lg:text-left lg:px-20">
+            <div class="lg:w-[535px]">
+                <button class="px-4 py-2 mb-[10px] border-2 border-[#262626] rounded-[6px] font-outfit font-medium text-[14px] bg-[#fff]">Overview</button>
+                <h1 class="text-[#1A1A1A] font-bold text-[28px] font-raleway mb-5 lg:text-[38px]">Welcome to Little Learners Academy</h1>
+            </div>
+            <p class="font-outfit font-medium text-base text-[#333333] lg:w-[535px]">A leading kinder garden school dedicated to providing a nurturing and stimulating environment for young learners. With a commitment to excellence in early education, we believe in shaping curious minds and building a strong foundation for a lifelong love of learning. Our holistic approach fosters intellectual, social, emotional, and physical development, ensuring that each child reaches their full potential.</p>
         </div>
         <!-- Missions & Visions -->
-        <div>
-            <button>Missions & Visions</button>
-            <h1>Our Mission & Visions</h1>
-            <p>We are here to provide a nurturing and inclusive environment where young minds can thrive, fostering a love for learning and personal growth.</p>
+        <div class="mt-20 text-center flex flex-col items-center justify-center">
+            <button class="px-4 py-2 mb-[10px] border-2 border-[#262626] rounded-[6px] font-outfit font-medium text-[14px] bg-[#fff]">Missions & Visions</button>
+            <h1 class="text-[#1A1A1A] font-bold text-[38px] font-raleway mb-[10px]">Our Mission & Visions</h1>
+            <p class="font-outfit font-medium text-[18px] text-[#333333] lg:px-[240px]">We are here to provide a nurturing and inclusive environment where young minds can thrive, fostering a love for learning and personal growth.</p>
         </div>
-        <!-- Mission -->
-        <div>
-            <div>
-                <h1>Mission</h1>
+        <div class="lg:flex lg:items-center lg:justfy-center lg:gap-10">
+            <!-- Mission -->
+        <div class="mt-[50px] px-[30px] py-[50px] text-left flex flex-col items-center justify-center bg-[#fff] border-2 border-[#262626] rounded-[10px] shadow-[6px_6px_0_1px] shadow-[#1E1E1E] lg:w-[620px] lg:h-[330px]">
+            <div class="flex gap-[130px] lg:gap-[400px] mb-10">
+                <h1 class="font-raleway font-bold text-[30px] text-[#1A1A1A]">Mission</h1>
             <img src="images/AboutUs/mission-img.png">
             </div>
-            <p>At Little Learners Academy, our mission is to inspire a passion for learning and empower young minds to become confident, compassionate, and creative individuals. We strive to create a safe and inclusive space where children thrive academically, socially, and emotionally, setting the stage for a successful educational journey.</p>
+            <p class="font-outfit text-base font-medium text-[#333333]">At Little Learners Academy, our mission is to inspire a passion for learning and empower young minds to become confident, compassionate, and creative individuals. We strive to create a safe and inclusive space where children thrive academically, socially, and emotionally, setting the stage for a successful educational journey.</p>
         </div>
         <!-- Vision -->
-        <div>
-            <div>
-                <h1>Vision</h1>
+        <div class="mt-[50px] px-[30px] py-[50px] text-left flex flex-col items-center justify-center bg-[#fff] border-2 border-[#262626] rounded-[10px] shadow-[6px_6px_0_1px] shadow-[#1E1E1E] lg:w-[620px] lg:h-[330px]">
+            <div class="flex gap-[130px] lg:gap-[400px] mb-10">
+                <h1 class="font-raleway font-bold text-[30px] text-[#1A1A1A]">Vision</h1>
             <img src="images/AboutUs/vision-img.png">
             </div>
-            <p>Our vision is to be a beacon of educational excellence, where children are encouraged to explore, discover, and express their unique talents. We aim to foster a generation of lifelong learners equipped with critical thinking, empathy, and a deep appreciation for diversity.</p>
+            <p class="font-outfit text-base font-medium text-[#333333]">Our vision is to be a beacon of educational excellence, where children are encouraged to explore, discover, and express their unique talents. We aim to foster a generation of lifelong learners equipped with critical thinking, empathy, and a deep appreciation for diversity.</p>
+        </div>
         </div>
         <!-- Our Achievements -->
-        <div>
-            <button>Our Achievements</button>
-            <h1>Our Awards and Recognitions</h1>
-            <p>Little Learners Academy takes pride in our commitment to delivering high-quality education and outstanding student experiences. We are honored to have received various awards and recognitions for our dedication to early childhood education. These accolades reflect our team's relentless efforts in creating an exceptional learning environment for our students.</p>
+        <div class="px-4 mt-20 text-center flex flex-col items-center justify-center">
+            <button class="px-4 py-2 mb-[10px] border-2 border-[#262626] rounded-[6px] font-outfit font-medium text-[14px] bg-[#fff]">Our Achievements</button>
+            <h1 class="text-[#1A1A1A] font-bold text-[38px] font-raleway mb-[10px]">Our Awards and Recognitions</h1>
+            <p class="font-outfit font-medium text-[18px] text-[#333333] lg:text-base lg:px-[150px]">Little Learners Academy takes pride in our commitment to delivering high-quality education and outstanding student experiences. We are honored to have received various awards and recognitions for our dedication to early childhood education. These accolades reflect our team's relentless efforts in creating an exceptional learning environment for our students.</p>
         </div>
         <!-- Environmental Stewardship Award -->
-        <div>
-        <div>
-        <img src="images/AboutUs/lightning-icon.png">
-        </div>
-        <h1>Environmental Stewardship Award</h1>
-        <p>Received from the Green Earth Society for our dedication to environmental education, sustainable practices, and fostering a love for nature in our students.</p>
+        <div class="lg:flex lg:justify-between">
+            <div class="mt-[80px] border-2 border-[#262626] rounded-[10px] shadow-[4px_4px_0_1px] shadow-[#1E1E1E] bg-[#fff] pt-[50px] pr-10 pb-[30px] pl-[30px] lg:mb-10 relative lg:p-10 lg:w-[400px] lg:h-[243px]">
+                <img class="absolute mt-[-80px] bg-[#FFDECC] p-4 border-2 border-[#262626] rounded-[8px]" src="images/AboutUs/lightning-icon.png">
+                <h1 class="font-bold font-raleway text-[22px] text-[#1A1A1A] text-start mb-4">Environmental Stewardship Award</h1>
+                <p class="font-medium font-outfit text-base text-[#4C4C4D] text-start">Received from the Green Earth Society for our dedication to environmental education, sustainable practices, and fostering a love for nature in our students.</p>
+            </div>
+            <div class="sm:hidden lg:block mt-[80px] border-2 border-[#262626] rounded-[10px] shadow-[4px_4px_0_1px] shadow-[#1E1E1E] bg-[#fff] pt-[50px] pr-10 pb-[30px] pl-[30px] lg:mb-10 relative lg:p-10 lg:w-[400px] lg:h-[243px]">
+                <img class="absolute mt-[-80px] bg-[#FFDECC] p-4 border-2 border-[#262626] rounded-[8px]" src="images/AboutUs/lightning-icon.png">
+                <h1 class="font-bold font-raleway text-[22px] text-[#1A1A1A] text-start mb-4">Environmental Stewardship Award</h1>
+                <p class="font-medium font-outfit text-base text-[#4C4C4D] text-start">Received from the Green Earth Society for our dedication to environmental education, sustainable practices, and fostering a love for nature in our students.</p>
+            </div>
+            <div class="sm:hidden lg:block mt-[80px] border-2 border-[#262626] rounded-[10px] shadow-[4px_4px_0_1px] shadow-[#1E1E1E] bg-[#fff] pt-[50px] pr-10 pb-[30px] pl-[30px] lg:mb-10 relative lg:p-10 lg:w-[400px] lg:h-[243px]">
+                <img class="absolute mt-[-80px] bg-[#FFDECC] p-4 border-2 border-[#262626] rounded-[8px]" src="images/AboutUs/lightning-icon.png">
+                <h1 class="font-bold font-raleway text-[22px] text-[#1A1A1A] text-start mb-4">Environmental Stewardship Award</h1>
+                <p class="font-medium font-outfit text-base text-[#4C4C4D] text-start">Received from the Green Earth Society for our dedication to environmental education, sustainable practices, and fostering a love for nature in our students.</p>
+            </div>
         </div>
         <!-- Awards -->
-        <div>
-            <p>8 More Awards</p>
-            <div>
-            <img src="images/AboutUs/arrow-left-icon.png">
-            </div>
-            <div>
-            <img src="images/AboutUs/arrow-right-icon.png">
+        <div class="mt-[30px] flex justify-between items-center">
+            <p class="font-raleway font-bold text-[18px] text-[#1A1A1A]">8 More Awards</p>
+            <div class="flex items-center justify-center gap-5">
+                <button class="p-[12px] bg-[#fff] border-2 border-[#262626] rounded-[8px]">
+                    <img src="./images/AboutUs/arrow-left-icon.png">
+                </button>
+                <button class="p-[12px] bg-[#fff] border-2 border-[#262626] rounded-[8px]">
+                    <img src="./images/AboutUs/arrow-right-icon.png">
+                </button>
             </div>
         </div>
         <!-- Our History -->
-        <div>
-            <button>Our Progressive Journey</button>
-            <h1>Our History</h1>
-            <p>Founded with a passion for early education in 2005, our kindergarten school boasts a rich history of empowering young learners to reach their potential through innovative teaching methods and a supportive learning environment</p>
+        <div class=" mt-20 text-center flex flex-col items-center justify-center">
+            <button class="px-4 py-2 mb-[10px] border-2 border-[#262626] rounded-[6px] font-outfit font-medium text-[14px] bg-[#fff]">Our Progressive Journey</button>
+            <h1 class="text-[#1A1A1A] font-bold text-[38px] font-raleway mb-[10px]">Our History</h1>
+            <p class="font-outfit font-medium text-[18px] text-[#333333]">Founded with a passion for early education in 2005, our kindergarten school boasts a rich history of empowering young learners to reach their potential through innovative teaching methods and a supportive learning environment</p>
         </div>
         <!-- Statistics -->
-        <div>
-            <div>
-                <button>
-                <img src="images/AboutUs/statistics-img.png">
-                    <p>2023</p>
-                </button>
-                <h1>Resilience and Future Horizons</h1>
-                <p>Adapting to new challenges, we remained committed to our mission of providing an exceptional early education. Looking ahead with optimism, we envision a future filled with boundless possibilities as we continue shaping the leaders and thinkers of tomorrow.</p>
+        <div class="mt-[50px] px-5 py-[50px] lg:p-[100px] text-left flex flex-col items-center justify-center bg-[#fff] border-2 border-[#262626] rounded-[10px] shadow-[6px_6px_0_1px] shadow-[#1E1E1E]">
+            <div class="lg:flex lg:gap-10">
+                    <button class="px-6 py-5 text-left flex items-center justify-center gap-5 bg-[#fff] border-2 border-[#262626] rounded-[10px] shadow-[6px_6px_0_1px] shadow-[#1E1E1E]">
+                        <img src="images/AboutUs/statistics-img.png">
+                            <p class="text-[#1A1A1A] text-[38px] font-bold font-raleway">2023</p>
+                        </button>
+                <div>
+                    <h1 class="mt-[30px] lg:mt-0 font-raleway font-bold text-[22px] text-[#1A1A1A]">Resilience and Future Horizons</h1>
+                <p class="mt-[12px] font-outfit font-medium text-base text-[#333333]">Adapting to new challenges, we remained committed to our mission of providing an exceptional early education. Looking ahead with optimism, we envision a future filled with boundless possibilities as we continue shaping the leaders and thinkers of tomorrow.</p>
+                </div>
             </div>
-            <div>
-                <button>
+            <div class="lg:flex lg:gap-10">
+                <button class="mt-[50px] px-6 py-5 text-left flex items-center justify-center gap-5 bg-[#fff] border-2 border-[#262626] rounded-[10px] shadow-[6px_6px_0_1px] shadow-[#1E1E1E]">
                 <img src="images/AboutUs/statistics-img.png">
-                    <p>2017</p>
+                    <p class="text-[#1A1A1A] text-[38px] font-bold font-raleway">2017</p>
                 </button>
-                <h1>Innovation and Technology</h1>
-                <p>Innovation became the driving force behind our kindergarten's progress from 2016 to 2020. Embracing the latest educational technologies, we crafted engaging and interactive learning experiences for our students.</p>
+                <div>
+                    <h1 class="mt-[30px] lg:mt-[50px] font-raleway font-bold text-[22px] text-[#1A1A1A]">Innovation and Technology</h1>
+                <p class="mt-[12px] font-outfit font-medium text-base text-[#333333]">Innovation became the driving force behind our kindergarten's progress from 2016 to 2020. Embracing the latest educational technologies, we crafted engaging and interactive learning experiences for our students.</p>
+                </div>
             </div>
-            <div>
-                <button>
+            <div class="lg:flex lg:gap-10">
+                <button class="mt-[50px] px-6 py-5 text-left flex items-center justify-center gap-5 bg-[#fff] border-2 border-[#262626] rounded-[10px] shadow-[6px_6px_0_1px] shadow-[#1E1E1E]">
                 <img src="images/AboutUs/statistics-img.png">
-                    <p>2012</p>
+                    <p class="text-[#1A1A1A] text-[38px] font-bold font-raleway">2012</p>
                 </button>
-                <h1>Expansion and Recognition</h1>
-                <p>These years marked as a period of expansion and recognition for our school. As we extended our facilities and enhanced our curriculum, we received accolades for our commitment to quality education and innovative teaching methodologies.</p>
+                <div>
+                    <h1 class="mt-[30px] lg:mt-[50px] font-raleway font-bold text-[22px] text-[#1A1A1A]">Expansion and Recognition</h1>
+                <p class="mt-[12px] font-outfit font-medium text-base text-[#333333]">These years marked as a period of expansion and recognition for our school. As we extended our facilities and enhanced our curriculum, we received accolades for our commitment to quality education and innovative teaching methodologies.</p>
+                </div>
             </div>
-            <div>
-                <button>
+            <div class="lg:flex lg:gap-10">
+                <button class="mt-[50px] px-6 py-5 text-left flex items-center justify-center gap-5 bg-[#fff] border-2 border-[#262626] rounded-[10px] shadow-[6px_6px_0_1px] shadow-[#1E1E1E]">
                 <img src="images/AboutUs/statistics-img.png">
-                    <p>2005</p>
+                    <p class="text-[#1A1A1A] text-[38px] font-bold font-raleway">2005</p>
                 </button>
-                <h1>Inception and Growth</h1>
-                <p>Established in 2005, our kindergarten school began its journey with a vision to provide a nurturing space for young minds to explore, learn, and grow. Over the next five years, we witnessed significant growth.</p>
+                <div>
+                    <h1 class="mt-[30px] lg:mt-[50px] font-raleway font-bold text-[22px] text-[#1A1A1A]">Inception and Growth</h1>
+                <p class="mt-[12px] font-outfit font-medium text-base text-[#333333]">Established in 2005, our kindergarten school began its journey with a vision to provide a nurturing space for young minds to explore, learn, and grow. Over the next five years, we witnessed significant growth.</p>
+                </div>
             </div>
         </div>
         <!-- Our Team Members -->
         <div>
-            <div>
-                <button>Our Teachers With Experties</button>
-                <h1>Our Team Members</h1>
-                <p>At Little Learners Academy, our teaching team is the heart of our educational journey. We take great pride in employing highly qualified and passionate educators who possess a deep understanding of early childhood development. Our teachers create a warm and engaging atmosphere, encouraging curiosity, instilling confidence, and fostering a love for learning.</p>
+            <div class=" mt-20 text-center flex flex-col items-center justify-center">
+                <button class="px-4 py-2 mb-[10px] border-2 border-[#262626] rounded-[6px] font-outfit font-medium text-[14px] bg-[#fff]">Our Teachers With Experties</button>
+                <h1 class="text-[#1A1A1A] font-bold text-[38px] font-raleway mb-[10px]">Our Team Members</h1>
+                <p class="font-outfit font-medium text-[18px] lg:text-base text-[#333333] lg:px-[280px]">At Little Learners Academy, our teaching team is the heart of our educational journey. We take great pride in employing highly qualified and passionate educators who possess a deep understanding of early childhood development. Our teachers create a warm and engaging atmosphere, encouraging curiosity, instilling confidence, and fostering a love for learning.</p>
             </div>
-            <!-- Sarah Anderson -->
-            <div>
-                <div>
+            <div class="lg:flex lg:grid-cols-2 lg:grid-rows-3 lg:gap-10">
+                <!-- Sarah Anderson -->
+            <div class="mt-[50px] p-[30px] text-left flex flex-col items-center justify-center bg-[#fff] border-2 border-[#262626] rounded-[10px] shadow-[6px_6px_0_1px] shadow-[#1E1E1E]">
+                <div class="flex items-center justify-center">
                     <div>
                     <img src="images/AboutUs/Sarah_Anderson.png">
                     </div>
-                    <h1>Ms. Sarah Anderson</h1>
-                    <div>
+                    <h1 class="font-raleway font-extrabold text-[20px] text-[#333333] ml-[10px]">Ms. Sarah Anderson</h1>
+                    <div class="bg-[#FFDECC] border-2 border-[#262626] rounded-[6px] p-[14px]">
                     <img src="images/AboutUs/Mail-Icon.png">
                     </div>
                 </div>
-                <div>
-                    <h1>Qualification:Bachelor's Degree in Early Childhood Education</h1>
-                    <p>Ms. Sarah is a passionate educator with over 10 years of experience in guiding young minds. Her warm and nurturing approach creates a welcoming classroom environment where children feel comfortable to explore and learn.</p>
+                <div class="mt-6 border-2 border-[#262626] rounded-[10px] bg-[#FFF5F0] p-5 text-left">
+                    <h1 class="font-outfit font-semibold text-[20px] text-[#333333]">Qualification:Bachelor's Degree in Early Childhood Education</h1>
+                    <p class="mt-3 font-outfit font-medium text-base text-[#333333]">Ms. Sarah is a passionate educator with over 10 years of experience in guiding young minds. Her warm and nurturing approach creates a welcoming classroom environment where children feel comfortable to explore and learn.</p>
                 </div>
             </div>
             <!-- David Roberts -->
-            <div>
-                <div>
+            <div class="mt-10 p-[30px] text-left flex flex-col items-center justify-center bg-[#fff] border-2 border-[#262626] rounded-[10px] shadow-[6px_6px_0_1px] shadow-[#1E1E1E]">
+                <div class="flex items-center justify-center">
                     <div>
                     <img src="images/AboutUs/David_Roberts.png">
                     </div>
-                    <h1>Mr. David Roberts</h1>
-                    <div>
+                    <h1 class="font-raleway font-extrabold text-[20px] text-[#333333] ml-[10px]">Mr. David Roberts</h1>
+                    <div class="bg-[#FFDECC] border-2 border-[#262626] rounded-[6px] p-[14px]">
                     <img src="images/AboutUs/Mail-Icon.png">
                     </div>
                 </div>
-                <div>
-                    <h1>Qualification: Master's Degree in Elementary Education</h1>
-                    <p>With a strong background in elementary education, Mr. David brings a creative and interactive teaching style to his classroom. His enthusiasm for learning inspires students to ask questions and think critically.</p>
+                <div class="mt-6 border-2 border-[#262626] rounded-[10px] bg-[#FFF5F0] p-5 text-left">
+                    <h1 class="font-outfit font-semibold text-[20px] text-[#333333]">Qualification: Master's Degree in Elementary Education</h1>
+                    <p class="mt-3 font-outfit font-medium text-base text-[#333333]">With a strong background in elementary education, Mr. David brings a creative and interactive teaching style to his classroom. His enthusiasm for learning inspires students to ask questions and think critically.</p>
                 </div>
             </div>
             <!-- Ms. Emily Hernandez -->
-            <div>
-                <div>
+            <div class="mt-10 p-[30px] text-left flex flex-col items-center justify-center bg-[#fff] border-2 border-[#262626] rounded-[10px] shadow-[6px_6px_0_1px] shadow-[#1E1E1E]">
+                <div class="flex items-center justify-center">
                     <div>
                     <img src="images/AboutUs/Emily_Hernandez.png">
                     </div>
-                    <h1>Ms. Emily Hernandez</h1>
-                    <div>
+                    <h1 class="font-raleway font-extrabold text-[20px] text-[#333333] ml-[10px]">Ms. Emily Hernandez</h1>
+                    <div class="bg-[#FFDECC] border-2 border-[#262626] rounded-[6px] p-[14px]">
                     <img src="images/AboutUs/Mail-Icon.png">
                     </div>
                 </div>
-                <div>
-                    <h1>Qualification: Diploma in Child Psychology</h1>
-                    <p>Ms. Emily's expertise in child psychology enables her to understand each child's unique needs and provide individualized support. Her caring nature fosters a strong sense of belonging and confidence in her students.</p>
+                <div class="mt-6 border-2 border-[#262626] rounded-[10px] bg-[#FFF5F0] p-5 text-left">
+                    <h1 class="font-outfit font-semibold text-[20px] text-[#333333]">Qualification: Diploma in Child Psychology</h1>
+                    <p class="mt-3 font-outfit font-medium text-base text-[#333333]">Ms. Emily's expertise in child psychology enables her to understand each child's unique needs and provide individualized support. Her caring nature fosters a strong sense of belonging and confidence in her students.</p>
                 </div>
             </div>
             <!-- Mr. Michael Turner -->
-            <div>
-                <div>
+            <div class="mt-10 p-[30px] text-left flex flex-col items-center justify-center bg-[#fff] border-2 border-[#262626] rounded-[10px] shadow-[6px_6px_0_1px] shadow-[#1E1E1E]">
+                <div class="flex items-center justify-center">
                     <div>
                     <img src="images/AboutUs/Michael_Turner.png">
                     </div>
-                    <h1>Mr. Michael Turner</h1>
-                    <div>
+                    <h1 class="font-raleway font-extrabold text-[20px] text-[#333333] ml-[10px]">Mr. Michael Turner</h1>
+                    <div class="bg-[#FFDECC] border-2 border-[#262626] rounded-[6px] p-[14px]">
                     <img src="images/AboutUs/Mail-Icon.png">
                     </div>
                 </div>
-                <div>
-                    <h1>Qualification: Bachelor's Degree in Physical Education</h1>
-                    <p>Mr. Michael's passion for physical fitness and sports shines through in his energetic classes. He encourages students to stay active, promoting teamwork and a healthy lifestyle.</p>
+                <div class="mt-6 border-2 border-[#262626] rounded-[10px] bg-[#FFF5F0] p-5 text-left">
+                    <h1 class="font-outfit font-semibold text-[20px] text-[#333333]">Qualification: Bachelor's Degree in Physical Education</h1>
+                    <p class="mt-3 font-outfit font-medium text-base text-[#333333]">Mr. Michael's passion for physical fitness and sports shines through in his energetic classes. He encourages students to stay active, promoting teamwork and a healthy lifestyle.</p>
                 </div>
             </div>
             <!-- Ms. Jessica Lee -->
-            <div>
-                <div>
+            <div class="mt-10 p-[30px] text-left flex flex-col items-center justify-center bg-[#fff] border-2 border-[#262626] rounded-[10px] shadow-[6px_6px_0_1px] shadow-[#1E1E1E]">
+                <div class="flex items-center justify-center">
                     <div>
                     <img src="images/AboutUs/Jessica_Lee.png">
                     </div>
-                    <h1>Ms. Jessica Lee</h1>
-                    <div>
+                    <h1 class="font-raleway font-extrabold text-[20px] text-[#333333] ml-[10px]">Ms. Jessica Lee</h1>
+                    <div class="bg-[#FFDECC] border-2 border-[#262626] rounded-[6px] p-[14px]">
                     <img src="images/AboutUs/Mail-Icon.png">
                     </div>
                 </div>
-                <div>
-                    <h1>Qualification: Master's Degree in Special Education</h1>
-                    <p>Ms. Jessica's specialization in special education allows her to create an inclusive and supportive learning environment for all students. She is dedicated to helping every child reach their full potential.</p>
+                <div class="mt-6 border-2 border-[#262626] rounded-[10px] bg-[#FFF5F0] p-5 text-left">
+                    <h1 class="font-outfit font-semibold text-[20px] text-[#333333]">Qualification: Master's Degree in Special Education</h1>
+                    <p class="mt-3 font-outfit font-medium text-base text-[#333333]">Ms. Jessica's specialization in special education allows her to create an inclusive and supportive learning environment for all students. She is dedicated to helping every child reach their full potential.</p>
                 </div>
             </div>
             <!-- Mr. William Parker -->
-            <div>
-                <div>
+            <div class="mt-10 p-[30px] text-left flex flex-col items-center justify-center bg-[#fff] border-2 border-[#262626] rounded-[10px] shadow-[6px_6px_0_1px] shadow-[#1E1E1E]">
+                <div class="flex items-center justify-center">
                     <div>
                     <img src="images/AboutUs/William_Parker.png">
                     </div>
-                    <h1>Mr. William Parker</h1>
-                    <div>
+                    <h1 class="font-raleway font-extrabold text-[20px] text-[#333333] ml-[10px]">Mr. William Parker</h1>
+                    <div class="bg-[#FFDECC] border-2 border-[#262626] rounded-[6px] p-[14px]">
                     <img src="images/AboutUs/Mail-Icon.png">
                     </div>
                 </div>
-                <div>
-                    <h1>Qualification: Bachelor's Degree in Fine Arts</h1>
-                    <p>Mr. William's background in fine arts brings creativity and imagination to his classroom. Through art projects and activities, he nurtures the artistic expression and self-confidence of his students.</p>
+                <div class="mt-6 border-2 border-[#262626] rounded-[10px] bg-[#FFF5F0] p-5 text-left">
+                    <h1 class="font-outfit font-semibold text-[20px] text-[#333333]">Qualification: Bachelor's Degree in Fine Arts</h1>
+                    <p class="mt-3 font-outfit font-medium text-base text-[#333333]">Mr. William's background in fine arts brings creativity and imagination to his classroom. Through art projects and activities, he nurtures the artistic expression and self-confidence of his students.</p>
                 </div>
+            </div>
             </div>
         </div>
 
-        <!-- FOOTER -->
-        <footer>
-            <div>
-            <img src="images/AboutUs/Logo.png">
-                <p>We believe in the power of play to foster creativity, problem-solving skills, and imagination.</p>
-            </div>
-            <!-- Contats -->
-            <div>
-                <div>
-                    <div>
-                    <img src="images/AboutUs/Mail-Icon.png">
+         <!-- FOOTER -->
+         <footer class="mt-[150px] px-[30px] pt-[60px] pb-[30px] text-center flex flex-col items-center justify-center bg-[#fff] shadow-[6px_6px_0_1px] shadow-[#1E1E1E] border-2 border-[#262626] rounded-[12px] lg:px-20">
+            <div class="lg:flex lg:items-center lg:justify-center lg:gap-20">
+                <div class="lg:flex lg:flex-col lg:items-start">
+                    <div class="flex flex-col items-center lg:items-start lg:mt-10">
+                        <img src="images/AboutUs/Logo.png">
+                        <p class="mt-4 font-outfit text-base font-medium text-[#4C4C4D] lg:mt-4 lg:mb-3 lg:text-start">We believe in the power of play to foster creativity, problem-solving skills, and imagination.</p>
                     </div>
-                    <p>hello@littlelearners.com</p>
-                </div>
-                <div>
-                    <div>
-                    <img src="images/AboutUs/Phone-Icon.png">
+                    <!-- Contats -->
+                    <div class="mt-10 flex flex-col items-start mr-[80px] gap-5">
+                        <div class="flex items-center justify-center gap-2">
+                            <div class="border-2 border-[#262626] rounded-[4px] bg-[#FFF5F0] p-[6px]">
+                            <img src="images/AboutUs/Mail-Icon.png">
+                            </div>
+                            <p class="font-outfit font-medium text-base text-[#262626]">hello@littlelearners.com</p>
+                        </div>
+                        <div class="flex items-center justify-center gap-2">
+                            <div class="border-2 border-[#262626] rounded-[4px] bg-[#FFF5F0] p-[6px]">
+                            <img src="images/AboutUs/Phone-Icon.png">
+                            </div>
+                            <p class="font-outfit font-medium text-base text-[#262626]">+91 91813 23 2309</p>
+                        </div>
+                        <div class="flex items-center justify-center gap-2">
+                            <div class="border-2 border-[#262626] rounded-[4px] bg-[#FFF5F0] p-[6px]">
+                            <img src="images/AboutUs/location-Icon.png">
+                            </div>
+                            <p class="font-outfit font-medium text-base text-[#262626]">Somewhere in the World</p>
+                        </div>
                     </div>
-                    <p>+91 91813 23 2309</p>
                 </div>
-                <div>
-                    <div>
-                    <img src="images/AboutUs/location-Icon.png">
+                <!-- Links -->
+                <div class="mt-10 flex items-center justify-center gap-[30px] lg:mt-[-10px]">
+                    <div class="flex flex-col items-start gap-[50px] lg:flex-row">
+                        <!-- Home -->
+                    <div class="flex flex-col items-start">
+                        <h1 class="font-outfit font-semibold text-base text-[#262626] mb-5">Home</h1>
+                        <ul class="flex flex-col items-start gap-[14px]">
+                            <li class="font-outfit font-medium text-base text-[#333333]">
+                                <a href="#">Features</a>
+                            </li>
+                            <li class="font-outfit font-medium text-base text-[#333333] text-start">
+                                <a href="#">Our Testimonials</a>
+                            </li>
+                            <li class="font-outfit font-medium text-base text-[#333333]">
+                                <a href="#">FAQ</a>
+                            </li>
+                        </ul>
                     </div>
-                    <p>Somewhere in the World</p>
+                    <!-- About Us -->
+                    <div class="flex flex-col items-start">
+                        <h1 class="font-outfit font-semibold text-base text-[#262626] mb-5">About Us</h1>
+                        <ul class="flex flex-col items-start gap-[14px]">
+                            <li class="font-outfit font-medium text-base text-[#333333]">
+                                <a href="#">Our Mission</a>
+                            </li>
+                            <li class="font-outfit font-medium text-base text-[#333333]">
+                                <a href="#">Our Vission</a>
+                            </li>
+                            <li class="font-outfit font-medium text-base text-[#333333] text-left">
+                                <a href="#">Awards and Recognitions</a>
+                            </li>
+                            <li class="font-outfit font-medium text-base text-[#333333]">
+                                <a href="#">History</a>
+                            </li>
+                            <li class="font-outfit font-medium text-base text-[#333333]">
+                                <a href="#">Teachers</a>
+                            </li>
+                        </ul>
+                    </div>
+                    </div>
+                    <div class="flex flex-col mt-[-125px] gap-[50px] lg:flex-row">
+                        <!-- Academics -->
+                    <div class="flex flex-col items-start">
+                        <h1 class="font-outfit font-semibold text-base text-[#262626] mb-5">Academics</h1>
+                        <ul class="flex flex-col items-start gap-[14px]">
+                            <li class="font-outfit font-medium text-base text-[#333333] text-left">
+                                <a href="#">Special Features</a>
+                            </li>
+                            <li class="font-outfit font-medium text-base text-[#333333]">
+                                <a href="#">Gallery</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Contact Us -->
+                    <div class="flex flex-col items-start">
+                        <h1 class="font-outfit font-semibold text-base text-[#262626] mb-5">Contact Us</h1>
+                        <ul class="flex flex-col items-start gap-[14px]">
+                            <li class="font-outfit font-medium text-base text-[#333333]">
+                                <a href="#">Information</a>
+                            </li>
+                            <li class="font-outfit font-medium text-base text-[#333333] text-left">
+                                <a href="#">Map & Direction</a>
+                            </li>
+                        </ul>
+                    </div>
+                    </div>
                 </div>
             </div>
-            <!-- Links -->
-            <div>
-                <!-- Home -->
+            
+            <img class="mt-[30px] mb-4 lg:mt-10 lg:w-full lg:h-[2px]" src="./images/MainPage/Line.png">
+            <div class="lg:flex lg:items-center lg:justify-center lg:gap-[700px]">
                 <div>
-                    <h1>Home</h1>
-                    <ul>
-                        <li>
-                            <a href="#">Features</a>
-                        </li>
-                        <li>
-                            <a href="#">Our Testimonials</a>
-                        </li>
-                        <li>
-                            <a href="#">FAQ</a>
-                        </li>
-                    </ul>
+                <div class="flex items-center justify-center gap-[6px] mb-5">
+                    <div class="font-outfit text-[14px] font-medium text-[#333333]">
+                        <a href="#">Terms of Service</a>
+                    </div>
+                    <img src="./images/MainPage/Line-2.png">
+                    <div class="font-outfit text-[14px] font-medium text-[#333333]">
+                        <a href="#">Privacy Policy</a>
+                    </div>
+                    <img src="./images/MainPage/Line-2.png">
+                    <div class="font-outfit text-[14px] font-medium text-[#333333]">
+                        <a href="#">Cookie Policy</a>
+                    </div>
                 </div>
-                <!-- Academics -->
-                <div>
-                    <h1>Academics</h1>
-                    <ul>
-                        <li>
-                            <a href="#">Special Features</a>
-                        </li>
-                        <li>
-                            <a href="#">Gallery</a>
-                        </li>
-                    </ul>
                 </div>
-                <!-- About Us -->
-                <div>
-                    <h1>About Us</h1>
-                    <ul>
-                        <li>
-                            <a href="#">Our Mission</a>
-                        </li>
-                        <li>
-                            <a href="#">Our Vission</a>
-                        </li>
-                        <li>
-                            <a href="#">Awards and Recognitions</a>
-                        </li>
-                        <li>
-                            <a href="#">History</a>
-                        </li>
-                        <li>
-                            <a href="#">Teachers</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Contact Us -->
-                <div>
-                    <h1>Contact Us</h1>
-                    <ul>
-                        <li>
-                            <a href="#">Information</a>
-                        </li>
-                        <li>
-                            <a href="#">Map & Direction</a>
-                        </li>
-                    </ul>
+                <!-- Social -->
+                <div class="flex items-center justify-center gap-[10px]">
+                    <div class="bg-[#FFDECC] border-2 border-[#262626] rounded-[6px] p-[12px]">
+                        <img src="./images/AboutUs/fb-icon.png">
+                    </div>
+                    <div class="bg-[#FFDECC] border-2 border-[#262626] rounded-[6px] p-[12px]">
+                        <img src="./images/AboutUs/twitter-icon.png">
+                    </div>
+                    <div class="bg-[#FFDECC] border-2 border-[#262626] rounded-[6px] p-[12px]">
+                        <img src="./images/AboutUs/linkedin-icon.png">
+                    </div>
                 </div>
             </div>
-
-            <hr>
-            <div>
-                <div>
-                    <a href="#">Terms of Service</a>
-                </div>
-                <div>
-                    <a href="#">Privacy Policy</a>
-                </div>
-                <div>
-                    <a href="#">Cookie Policy</a>
-                </div>
-            </div>
-            <!-- Social -->
-            <div>
-                <div>
-                    <img src="./images/AboutUs/fb-icon.png">
-                </div>
-                <div>
-                    <img src="./images/AboutUs/twitter-icon.png">
-                </div>
-                <div>
-                    <img src="./images/AboutUs/linkedin-icon.png">
-                </div>
-            </div>
-
-            <hr>
-            <p>Copyright © [2023] Little Learners Academy. All rights reserved.</p>
+            <img class="my-4  lg:w-full lg:h-[2px]" src="./images/MainPage/Line.png">
+            <p class="font-outfit text-[14px] font-medium text-[#656567]">Copyright © [2023] Little Learners Academy. All rights reserved.</p>
         </footer>
     </body>
 </body>
